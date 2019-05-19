@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RentCar.Business">
+      <HintPath>..\..\RentCar\RentCar.Business\bin\Debug\netcoreapp2.1\RentCar.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="RentCar.Data">
+      <HintPath>..\..\RentCar\RentCar.Business\bin\Debug\netcoreapp2.1\RentCar.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="RentCar.Entity">
+      <HintPath>..\..\RentCar\RentCar.Business\bin\Debug\netcoreapp2.1\RentCar.Entity.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
